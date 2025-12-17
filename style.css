@@ -1,0 +1,284 @@
+/* Toàn trang */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #feffff, #ffe0ea, #f0ffdb);
+  color: #4e342e;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+/* Header */
+#header {
+  background: linear-gradient(to right, #ff6a9c, #fff759);
+  color: white;
+  padding: 25px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.hLeft {
+  text-align: left;
+}
+
+.logo img {
+  width: 140px;   
+  height: auto;
+  display: block;
+  margin-bottom: 0px;
+}
+
+.hLeft h1 {
+  font-size: 2.2em;
+  margin: 0;
+  font-style: italic;
+}
+
+.hLeft .slogan {
+  font-style: italic;
+  font-size: 1.1em;
+  color: #fffde7;
+  margin-top: 5px;
+}
+
+.hRight ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.hRight ul li {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.hRight ul li a {
+  text-decoration: none;
+  color: #fffde7;
+  font-weight: bold;
+  font-size: 1.05em;
+  transition: color 0.3s ease;
+}
+
+.hRight ul li a:hover {
+  color: #4e342e;
+}
+
+/* Nội dung chính */
+main {
+  padding: 30px 40px;
+  padding-top: 20px;
+}
+
+/* Intro */
+.intro {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  min-height: 420px;
+}
+
+.intro-text {
+  flex: 1;
+  max-width: 560px;
+}
+
+.intro-text h2 {
+  color: #d81b60;
+  font-size: 2.4em;
+  font-style: italic;
+  text-align: left;
+  margin-bottom: 15px;
+  line-height: 1.2;
+}
+
+.intro-text p {
+  font-size: 1.1em;
+  line-height: 1.7;
+  margin-bottom: 12px;
+  text-align: left;
+}
+
+.intro-images {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: flex-end;
+  justify-content: flex-end;
+  margin-left: auto;
+}
+
+.intro-images img {
+  width: 280px;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+
+.intro-images img:hover {
+  transform: scale(1.05);
+}
+
+/* Services */
+.services {
+  margin-top: 40px;
+  background: #fffde7;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.services h3, .services h2 {
+  color: #f06292;
+  font-size: 1.5em;
+  margin-bottom: 15px;
+}
+
+.services ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.services li {
+  margin: 10px 0;
+  font-size: 1.1em;
+  color: #4e342e;
+}
+
+/* Service detail (cho trang Dịch Vụ) */
+.service-detail {
+  margin: 40px 0;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.service-detail h3 {
+  color: #f06292;
+  margin-bottom: 10px;
+}
+
+.service-detail p {
+  font-size: 1.1em;
+  line-height: 1.7;
+}
+
+.service-image {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.service-image img {
+  width: 320px;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+/* Contact form */
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input, .contact-form textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1em;
+}
+
+.contact-form button {
+  padding: 12px;
+  background: #f06292;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1em;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background: #d81b60;
+}
+
+.flower-image img {
+  width: 280px;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+
+/* Định dạng chung cho phần intro */
+.intro {
+  margin: 20px auto;
+  max-width: 1000px;
+  font-size: 1.2em; /* chữ to hơn một chút */
+  line-height: 1.6;
+}
+
+.flower-detail {
+  margin: 40px 0;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Sắp xếp hình và chữ nằm ngang */
+.flower-content {
+  display: flex;            /* cho hình và chữ nằm cạnh nhau */
+  align-items: flex-start;  /* căn trên cùng */
+  gap: 20px;                /* khoảng cách giữa hình và chữ */
+}
+
+/* Hình ảnh bên trái */
+.flower-image img {
+  max-width: 300px;   /* giới hạn kích thước hình */
+  height: auto;
+  border-radius: 8px; /* bo góc nhẹ cho đẹp */
+}
+
+/* Chữ bên phải */
+.flower-text {
+  flex: 1;                  /* chiếm phần còn lại */
+  font-size: 1.2em;          /* chữ to hơn một chút */
+  line-height: 1.6;
+}
+
+/* Tiêu đề phụ của từng loài hoa */
+.flower-text h3 {
+  margin-top: 0;
+  font-size: 1.4em;          /* tiêu đề nổi bật hơn */
+  color: #b22222;            /* màu đỏ rượu vang nhẹ */
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 0.95em;
+  color: #4e342e;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.footer-content span {
+  flex: 1;
+}
+
+.footer-content .left { text-align: left; }
+.footer-content .center { text-align: center; font-weight: 500; font-style: italic; }
+.footer-content .right { text-align: right; }

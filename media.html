@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Liên Hệ – Trạm Hoa</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="header">
+  <div class="hLeft">
+    <div class="logo">
+      <img src="../Image/flower.png" alt="Logo Trạm Hoa FELICE">
+    </div>
+    <h1>Liên Hệ</h1>
+  </div>
+  <div class="hRight">
+    <ul>
+      <li><a href="index.html">Trang Chủ</a></li>
+      <li><a href="about.html">Sản phẩm</a></li>
+      <li><a href="contact.html">Dịch Vụ</a></li>
+      <li><a href="media.html">Liên Hệ</a></li>
+    </ul>
+  </div>
+</div>
+
+  <main>
+    <!-- Giới thiệu -->
+    <section class="contact-intro">
+      <h2>Kết nối cùng Trạm Hoa FELICE</h2>
+      <p>
+        Mỗi bó hoa là một thông điệp yêu thương. Hãy để chúng tôi đồng hành cùng bạn trong những khoảnh khắc quan trọng, 
+        từ lời chúc sinh nhật, lời tỏ tình ngọt ngào cho đến những lời cảm ơn chân thành.
+      </p>
+      <p>
+        “Hoa là ngôn ngữ của trái tim – và chúng tôi là người chuyển tải thông điệp ấy.”
+      </p>
+    </section>
+
+    <!-- Form liên hệ -->
+    <section class="contact-form">
+      <h2>Gửi tin nhắn cho Trạm Hoa</h2>
+      <form onsubmit="sendMessage(event)">
+        <input type="text" placeholder="Tên của bạn" required>
+        <input type="email" placeholder="Email" required>
+        <textarea placeholder="Tin nhắn của bạn..." required></textarea>
+        <button type="submit">Gửi đi</button>
+      </form>
+    </section>
+
+    <!-- Thông tin liên hệ -->
+    <section class="contact-info">
+      <h2>Thông tin liên hệ</h2>
+      <p>📧 Email: <strong>tramhoa@flower.vn</strong></p>
+      <p>☎️ Hotline: <strong>0909 123 456</strong></p>
+      <p>🏠 Địa chỉ: 123 Nguyễn Huệ, Quận 1, TP. Hồ Chí Minh</p>
+      <p>⏰ Giờ làm việc: 7:00 – 18:30 (Thứ 2 – Chủ Nhật)</p>
+    </section>
+  
+  <footer>
+    <p>Trạm Hoa – nơi yêu thương được gửi gắm bằng sắc hoa 💐</p>
+    <p>“Một bó hoa nhỏ, một niềm vui lớn.”</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
